@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Keco Studio · For Game Designers</title>
+<meta name="description" content="Manage characters, skills, items and balance data in one place, and test how it plays before development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;800&display=swap">
+<link rel="stylesheet" href="styles.css?v=theme-time-3">
+</head>
+<body>
+<header class="site-header">
+  <div class="topbar">
+    <div class="wrap">
+      <a href="#">Tutorials</a>
+      <a href="#">Documentation</a>
+      <a href="#">Community</a>
+      <a href="#">Support</a>
+      <span class="sep" aria-hidden="true"></span>
+      <a href="#">English</a>
+      <a href="#" lang="zh">中文</a>
+    </div>
+  </div>
+  <div class="mainbar">
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="Keco Studio home"><img src="assets/keco-logo.png" alt="Keco" width="95" height="35"></a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html">Product</a>
+        <a href="game-designers.html" aria-current="page">Solutions</a>
+        <a href="#">Resources</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="#">Community</a>
+      </nav>
+      <div class="actions">
+        <button type="button" class="icon-btn search-btn" aria-label="Search"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="12.5" cy="12.5" r="7" stroke-width="1.5"></circle><path d="M17.5 17.5L23 23" stroke-width="1.5" stroke-linecap="round"></path></svg></button>
+        <button type="button" class="icon-btn theme-btn" aria-label="Use dark mode" title="Use dark mode" aria-pressed="false"><svg class="theme-icon-moon" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path d="M22 18.5A9 9 0 0 1 9.5 6 9 9 0 1 0 22 18.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg class="theme-icon-sun" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="14" cy="14" r="5" stroke-width="1.5"></circle><path d="M14 3v3M14 22v3M3 14h3M22 14h3M6.2 6.2l2.1 2.1M19.7 19.7l2.1 2.1M21.8 6.2l-2.1 2.1M8.3 19.7l-2.1 2.1" stroke-width="1.5" stroke-linecap="round"></path></svg></button>
+        <a href="#" class="icon-btn account-btn" aria-label="Your account"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="14" cy="10" r="5" stroke-width="1.5"></circle><path d="M5 24c1.5-4.5 5-7 9-7s7.5 2.5 9 7" stroke-width="1.5" stroke-linecap="round"></path></svg></a>
+        <a href="#" class="login">Log in</a>
+        <a href="#" class="btn btn-primary">Sign Up Free</a>
+        <button type="button" class="icon-btn menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-panel"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path d="M5 9h18M5 14h18M5 19h18" stroke-width="1.5" stroke-linecap="round"></path></svg></button>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-panel" id="mobile-panel" hidden>
+    <div class="wrap">
+      <a class="m-link" href="index.html">Product</a>
+      <a class="m-link" href="game-designers.html" aria-current="page">Solutions</a>
+      <a class="m-link" href="#">Resources</a>
+      <a class="m-link" href="pricing.html">Pricing</a>
+      <a class="m-link" href="#">Community</a>
+      <div class="btn-row">
+        <a href="#" class="btn btn-primary">Sign Up Free</a>
+        <a href="#" class="btn btn-line">Log in</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="gd-hero">
+    <div class="wrap grid">
+      <div class="gd-hero-text">
+        <span class="eyebrow">For Game Designers</span>
+        <h1 class="t-xl">Every character, skill and item in one living system.</h1>
+        <p>Keco gives game designers one place to manage characters, skills, items and balance data, then test how it all plays before development starts.</p>
+        <div class="btn-row">
+          <a href="#" class="btn btn-primary">Download Keco Studio</a>
+          <a href="#" class="btn btn-line">Browse Templates</a>
+        </div>
+      </div>
+      <div class="mock gd-mock" role="img" aria-label="Example: a characters table linked to a skills table">
+        <div class="card">
+          <div class="card-head"><span>characters · 3 of 48 rows</span><span>Linked to skills</span></div>
+          <div class="table-scroll">
+            <table class="data">
+              <thead><tr><th>Name</th><th>Class</th><th>HP</th><th>Skill</th></tr></thead>
+              <tbody>
+                <tr><td class="bold">Aria</td><td>Ranger</td><td>420</td><td><span class="skill-chip">» Volley</span></td></tr>
+                <tr><td class="bold">Brom</td><td>Warden</td><td>610</td><td><span class="skill-chip">» Bulwark</span></td></tr>
+                <tr><td class="bold">Sable</td><td>Rogue</td><td>380</td><td><span class="skill-chip">» Shadowstep</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card linked">
+          <div class="card-head"><span>skills</span><span>Referenced by 3 characters</span></div>
+          <div class="table-scroll">
+            <table class="data">
+              <thead><tr><th>Skill</th><th>Cost</th><th>Cooldown</th><th>Effect</th></tr></thead>
+              <tbody>
+                <tr><td class="bold">Volley</td><td>20</td><td>6 s</td><td>3 arrows × 40% ATK</td></tr>
+                <tr><td class="bold">Bulwark</td><td>30</td><td>12 s</td><td>Block 60% damage, 4 s</td></tr>
+                <tr><td class="bold">Shadowstep</td><td>15</td><td>8 s</td><td>Teleport behind target</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <span class="eyebrow">What You Get</span>
+      <h2 class="t-lg statement">Structured data, mechanics you can test, and balance before build.</h2>
+      <div class="benefits">
+        <article class="benefit">
+          <h3 class="t-xs">Structured game data</h3>
+          <p>Characters, skills, items and loot tables live in linked tables, so one change updates everywhere it’s referenced.</p>
+          <ul><li>» Linked references between tables</li><li>» Import from CSV and XLSX</li><li>» Version snapshots and rollback</li></ul>
+        </article>
+        <article class="benefit">
+          <h3 class="t-xs">Mechanics you can test</h3>
+          <p>Describe a mechanic in plain language and let the AI agent draft the formulas, tables and edge cases for you to refine.</p>
+          <ul><li>» Formula editor with live preview</li><li>» AI-generated first drafts</li><li>» Reusable components from the Marketplace</li></ul>
+        </article>
+        <article class="benefit">
+          <h3 class="t-xs">Balance before build</h3>
+          <p>Run thousands of simulated sessions to check progression, difficulty and economy curves before anything reaches your engine.</p>
+          <ul><li>» Progression and economy charts</li><li>» Compare balance versions side by side</li><li>» Shareable reports for the team</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="eyebrow">Start Here</h2>
+      <div class="starts">
+        <a href="#" class="tile">
+          <div class="ph pixmap" data-map="a" style="--cell:22px;--gap:3px"></div>
+          <div class="ov-top"></div>
+          <div class="tile-text"><span class="t-xs bold">Template</span><span class="t-xs">Pixel Map</span></div>
+          <svg class="tile-arrow" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 9h10.2L9.6 5.4 11 4l6 6-6 6-1.4-1.4 3.6-3.6H3z"></path></svg>
+        </a>
+        <a href="#" class="tile">
+          <div class="ph pixmap" data-map="b" style="--cell:22px;--gap:3px"></div>
+          <div class="ov-top"></div>
+          <div class="tile-text"><span class="t-xs bold">Tutorial</span><span class="t-xs">Balancing an RPG economy</span></div>
+          <svg class="tile-arrow" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 9h10.2L9.6 5.4 11 4l6 6-6 6-1.4-1.4 3.6-3.6H3z"></path></svg>
+        </a>
+        <a href="#" class="tile">
+          <div class="ph pixmap" data-map="c" style="--cell:22px;--gap:3px"></div>
+          <div class="ov-top"></div>
+          <div class="tile-text"><span class="t-xs bold">Use Case</span><span class="t-xs">Pixel Dungeon Crawler</span></div>
+          <svg class="tile-arrow" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 9h10.2L9.6 5.4 11 4l6 6-6 6-1.4-1.4 3.6-3.6H3z"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section faq">
+    <div class="wrap grid">
+      <div class="faq-intro">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="t-md">Questions from Game Designers</h2>
+        <p class="muted">Something else on your mind?</p>
+        <a href="#" class="arrow-link">Get in touch with the team<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 9h10.2L9.6 5.4 11 4l6 6-6 6-1.4-1.4 3.6-3.6H3z"></path></svg></a>
+      </div>
+      <div class="faq-list">
+        <details open><summary class="t-xs">Do I need to know how to code?<svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path class="h" d="M6 14h16" stroke-width="1.5" stroke-linecap="round"></path><path class="v" d="M14 6v16" stroke-width="1.5" stroke-linecap="round"></path></svg></summary><p>No. You design mechanics, tables and balance rules visually or in plain language. Keco handles the structure and exports for your engine.</p></details>
+        <details><summary class="t-xs">Can I import my existing spreadsheets?<svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path class="h" d="M6 14h16" stroke-width="1.5" stroke-linecap="round"></path><path class="v" d="M14 6v16" stroke-width="1.5" stroke-linecap="round"></path></svg></summary><p>Yes. Keco imports CSV and XLSX files and keeps references between tables intact, so an item’s loot table or a unit’s skills stay linked.</p></details>
+        <details><summary class="t-xs">How does balance simulation work?<svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path class="h" d="M6 14h16" stroke-width="1.5" stroke-linecap="round"></path><path class="v" d="M14 6v16" stroke-width="1.5" stroke-linecap="round"></path></svg></summary><p>Keco runs thousands of simulated sessions using your real data and formulas, then charts progression, difficulty and economy curves so you can spot problems early.</p></details>
+        <details><summary class="t-xs">Can the AI agent change my data?<svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path class="h" d="M6 14h16" stroke-width="1.5" stroke-linecap="round"></path><path class="v" d="M14 6v16" stroke-width="1.5" stroke-linecap="round"></path></svg></summary><p>Only when you ask. Every agent change is shown for review and saved as a version snapshot, so you can compare or roll back at any time.</p></details>
+        <details><summary class="t-xs">Which genres does Keco work for?<svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path class="h" d="M6 14h16" stroke-width="1.5" stroke-linecap="round"></path><path class="v" d="M14 6v16" stroke-width="1.5" stroke-linecap="round"></path></svg></summary><p>Any game with systems behind it: RPGs, roguelikes, strategy, card games, simulations and more. Marketplace templates give you a head start in each.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="band">
+        <h2 class="t-lg">Design the system, then prove it works.</h2>
+        <div class="btn-row">
+          <a href="#" class="btn btn-primary">Download Keco Studio</a>
+          <a href="pricing.html" class="btn btn-line">See Pricing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="ft-top">
+      <div>
+        <a href="index.html" aria-label="Keco Studio home"><img src="assets/keco-logo.png" alt="Keco" width="95" height="35"></a>
+        <p class="ft-tag">The AI-native workspace for designing, testing and balancing game systems.</p>
+      </div>
+      <div class="ft-lang"><a href="#"><b>English</b></a><span aria-hidden="true">·</span><a href="#" lang="zh">中文</a></div>
+    </div>
+    <div class="ft-cols">
+      <div><h3>Product</h3><ul><li><a href="#">» Download</a></li><li><a href="index.html#gdd">» GDD to game</a></li><li><a href="index.html#agent">» Keco agent</a></li><li><a href="index.html#mcp">» MCP integration</a></li><li><a href="pricing.html">» Pricing</a></li><li><a href="#">» Release notes</a></li></ul></div>
+      <div><h3>Solutions</h3><ul><li><a href="game-designers.html">» Game Designers</a></li><li><a href="#">» Narrative Teams</a></li><li><a href="#">» Technical Designers</a></li><li><a href="#">» Creators</a></li></ul></div>
+      <div><h3>Resources</h3><ul><li><a href="#">» Tutorials</a></li><li><a href="#">» Use cases</a></li><li><a href="#">» Documentation</a></li><li><a href="#">» Templates</a></li><li><a href="#">» Plugins</a></li></ul></div>
+      <div><h3>Community</h3><ul><li><a href="#">» Made with Keco</a></li><li><a href="#">» Events</a></li><li><a href="#">» Keco Forums</a></li><li><a href="https://github.com/keco-studio">» GitHub</a></li><li><a href="#">» All channels</a></li></ul></div>
+      <div><h3>Company</h3><ul><li><a href="#">» Support</a></li><li><a href="#">» Contact us</a></li></ul></div>
+    </div>
+    <div class="ft-bottom">
+      <div><a href="https://discord.com/invite/KecoStudio">Discord</a><a href="https://www.youtube.com/@KecoStudio">YouTube</a><a href="https://x.com/KecoStudio">X</a><a href="https://www.instagram.com/kecostudio">Instagram</a><a href="https://www.tiktok.com/@kecostudio">TikTok</a><a href="https://www.reddit.com/r/KecoStudio">Reddit</a><a href="https://github.com/keco-studio">GitHub</a></div>
+      <div><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Cookies</a><span>© 2026 Keco Studio</span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js?v=theme-time-3"></script>
+</body>
+</html>
