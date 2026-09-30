@@ -1,376 +1,316 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO & Social Sharing -->
-    <title>Keco Studio - Game Design & Development Platform</title>
-    <meta name="description" content="Keco Studio: Create smarter, Build faster, Play sooner. The all-in-one platform for game designers with seamless engine integration.">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kecostudio.com/">
-    <meta property="og:title" content="Keco Studio - The Future of Game Design">
-    <meta property="og:description" content="An all-in-one collaborative platform for game designers featuring asset management, numerical balancing, and AI creative coding.">
-    <meta property="og:image" content="https://googleusercontent.com/image_collection/image_retrieval/9772743454186027867">
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Keco Studio</title>
+<meta name="description" content="Keco Studio is the AI-native workspace for game designers to organize data, build mechanics, collaborate, and validate balance before development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;800&display=swap">
+<link rel="stylesheet" href="styles.css?v=theme-time-3">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://kecostudio.com/">
-    <meta property="twitter:title" content="Keco Studio - The Future of Game Design">
-    <meta property="twitter:description" content="Create smarter, Build faster, Play sooner. The unified workspace for indie game studios.">
-    <meta property="twitter:image" content="https://googleusercontent.com/image_collection/image_retrieval/9772743454186027867">
+<header class="site-header">
+  <div class="topbar">
+    <div class="wrap">
+      <a href="#">Tutorials</a>
+      <a href="#">Documentation</a>
+      <a href="#">Community</a>
+      <a href="#">Support</a>
+      <span class="sep" aria-hidden="true"></span>
+      <a href="#">English</a>
+      <a href="#" lang="zh">中文</a>
+    </div>
+  </div>
+  <div class="mainbar">
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="Keco Studio home"><img src="assets/keco-logo.png" alt="Keco" width="95" height="35"></a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html" aria-current="page">Product</a>
+        <a href="game-designers.html">Solutions</a>
+        <a href="#">Resources</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="#">Community</a>
+      </nav>
+      <div class="actions">
+        <button type="button" class="icon-btn search-btn" aria-label="Search"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="12.5" cy="12.5" r="7" stroke-width="1.5"></circle><path d="M17.5 17.5L23 23" stroke-width="1.5" stroke-linecap="round"></path></svg></button>
+        <button type="button" class="icon-btn theme-btn" aria-label="Use dark mode" title="Use dark mode" aria-pressed="false"><svg class="theme-icon-moon" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path d="M22 18.5A9 9 0 0 1 9.5 6 9 9 0 1 0 22 18.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg class="theme-icon-sun" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="14" cy="14" r="5" stroke-width="1.5"></circle><path d="M14 3v3M14 22v3M3 14h3M22 14h3M6.2 6.2l2.1 2.1M19.7 19.7l2.1 2.1M21.8 6.2l-2.1 2.1M8.3 19.7l-2.1 2.1" stroke-width="1.5" stroke-linecap="round"></path></svg></button>
+        <a href="#" class="icon-btn account-btn" aria-label="Your account"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="14" cy="10" r="5" stroke-width="1.5"></circle><path d="M5 24c1.5-4.5 5-7 9-7s7.5 2.5 9 7" stroke-width="1.5" stroke-linecap="round"></path></svg></a>
+        <a href="#" class="login">Log in</a>
+        <a href="#" class="btn btn-primary">Sign Up Free</a>
+        <button type="button" class="icon-btn menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-panel"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path d="M5 9h18M5 14h18M5 19h18" stroke-width="1.5" stroke-linecap="round"></path></svg></button>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-panel" id="mobile-panel" hidden>
+    <div class="wrap">
+      <a class="m-link" href="index.html" aria-current="page">Product</a>
+      <a class="m-link" href="game-designers.html">Solutions</a>
+      <a class="m-link" href="#">Resources</a>
+      <a class="m-link" href="pricing.html">Pricing</a>
+      <a class="m-link" href="#">Community</a>
+      <div class="btn-row">
+        <a href="#" class="btn btn-primary">Sign Up Free</a>
+        <a href="#" class="btn btn-line">Log in</a>
+      </div>
+    </div>
+  </div>
+</header>
 
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        display: ['Rajdhani', 'sans-serif'],
-                    },
-                    colors: {
-                        cyan: {
-                            600: '#0891b2',
-                            700: '#0e7490',
-                        }
-                    },
-                    backgroundImage: {
-                        'hero-pattern': 'radial-gradient(circle at center, rgba(34, 211, 238, 0.05) 0%, transparent 70%)',
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f5f9;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
-        }
-    </style>
-</head>
-<body class="bg-white text-slate-800 font-sans antialiased selection:bg-cyan-200 selection:text-cyan-900">
-
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <div class="flex items-center gap-2">
-                    <i class="fa-solid fa-gamepad text-cyan-600 text-2xl"></i>
-                    <span class="font-display font-bold text-2xl text-slate-900 tracking-wider">KECO STUDIO</span>
-                </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#mission" class="text-slate-600 hover:text-cyan-700 transition-colors px-3 py-2 rounded-md text-sm font-medium">Mission</a>
-                        <a href="#features" class="text-slate-600 hover:text-cyan-700 transition-colors px-3 py-2 rounded-md text-sm font-medium">Features</a>
-                        <a href="#roadmap" class="text-slate-600 hover:text-cyan-700 transition-colors px-3 py-2 rounded-md text-sm font-medium">Roadmap</a>
-                        <a href="#contact" class="bg-cyan-50 text-cyan-700 border border-cyan-200 hover:bg-cyan-600 hover:text-white hover:border-cyan-600 transition-all px-4 py-2 rounded-md text-sm font-bold uppercase font-display">Get Early Access</a>
-                    </div>
-                </div>
-                <!-- Mobile menu button -->
-                <div class="-mr-2 flex md:hidden">
-                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-slate-500 hover:text-cyan-600 hover:bg-slate-100 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-                        <i class="fa-solid fa-bars text-xl"></i>
-                    </button>
-                </div>
-            </div>
+<main>
+  <section class="hero">
+    <div class="wrap grid">
+      <h1 class="t-display">From game ideas to systems that work.</h1>
+      <div class="hero-side">
+        <p>Keco Studio is the AI-native workspace for game designers to organize data, build mechanics, collaborate, and validate balance before development.</p>
+        <div class="btn-row">
+          <a href="#" class="btn btn-primary">Download Keco Studio</a>
+          <a href="pricing.html" class="btn btn-line">See Pricing</a>
         </div>
-        <!-- Mobile Menu -->
-        <div class="hidden md:hidden bg-white border-b border-slate-200" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#mission" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-cyan-600 hover:bg-slate-50">Mission</a>
-                <a href="#features" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-cyan-600 hover:bg-slate-50">Features</a>
-                <a href="#roadmap" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-cyan-600 hover:bg-slate-50">Roadmap</a>
-            </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="Highlights">
+    <div class="wrap grid mosaic">
+      <a href="#gdd" class="tile tile-lg">
+        <div class="ph pixmap" data-map="hero" style="left:-12px;top:-12px"></div>
+        <div class="ov-top"></div>
+        <div class="ov-bottom"></div>
+        <div class="tile-text">
+          <span class="t-xs bold">GDD to Game</span>
+          <span class="t-xs">Turn a game design document into a playable prototype in one click.</span>
         </div>
-    </nav>
+        <svg class="tile-arrow" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 9h10.2L9.6 5.4 11 4l6 6-6 6-1.4-1.4 3.6-3.6H3z"></path></svg>
+      </a>
+      <div class="stack">
+        <a href="#agent" class="tile">
+          <div class="ph agent-cells"></div>
+          <div class="ov-top"></div>
+          <div class="ov-bottom"></div>
+          <div class="tile-text">
+            <span class="t-xs bold">Keco Agent</span>
+            <span>Edit tables, generate art and draft docs from one prompt.</span>
+          </div>
+          <svg class="tile-arrow" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 9h10.2L9.6 5.4 11 4l6 6-6 6-1.4-1.4 3.6-3.6H3z"></path></svg>
+        </a>
+        <a href="#mcp" class="tile">
+          <div class="ph nodes"><i class="n"></i><i class="w"></i><i class="n hot"></i><i class="w"></i><i class="n"></i></div>
+          <div class="ov-top"></div>
+          <div class="tile-text">
+            <span class="t-xs bold">MCP Integration</span>
+            <span>Connect any language model to your engine. No code.</span>
+          </div>
+          <svg class="tile-arrow" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 9h10.2L9.6 5.4 11 4l6 6-6 6-1.4-1.4 3.6-3.6H3z"></path></svg>
+        </a>
+      </div>
+      <div class="linkpanel">
+        <h2 class="t-xs bold">Solutions</h2>
+        <ul class="link-list">
+          <li><a href="game-designers.html">» For Game Designers</a></li>
+          <li><a href="#">» For Narrative Teams</a></li>
+          <li><a href="#">» For Technical Designers</a></li>
+          <li><a href="#">» For Creators</a></li>
+        </ul>
+        <h2 class="t-xs bold">Resources</h2>
+        <ul class="link-list">
+          <li><a href="#">» Tutorials</a></li>
+          <li><a href="#">» Use Cases</a></li>
+          <li><a href="#">» Marketplace</a></li>
+          <li><a href="#">» Documentation</a></li>
+        </ul>
+        <a href="#" class="arrow-link accent">Browse Templates<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 9h10.2L9.6 5.4 11 4l6 6-6 6-1.4-1.4 3.6-3.6H3z"></path></svg></a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-slate-50">
-        <!-- Background Image with Overlay -->
-        <div class="absolute inset-0 z-0">
-            <img src="https://googleusercontent.com/image_collection/image_retrieval/9772743454186027867" alt="Game Dev Setup" class="w-full h-full object-cover opacity-10">
-            <div class="absolute inset-0 bg-gradient-to-b from-white/0 via-white/50 to-white"></div>
+  <section class="section">
+    <div class="wrap">
+      <h2 class="eyebrow">Why Keco</h2>
+      <p class="statement t-lg">Design your game’s systems. Prove they work. <span class="muted">Keco brings your mechanics, data and content into one place that AI can understand.</span></p>
+      <div class="pillars">
+        <article class="pillar">
+          <span class="fig t-label">FIG 0.1</span>
+          <div class="art"><svg viewBox="0 0 220 140" fill="none" aria-hidden="true"><rect class="s" x="10" y="14" width="76" height="112" stroke-width="2"></rect><path class="s" d="M24 38h48M24 54h48M24 70h36M24 86h44M24 102h28" stroke-width="2" stroke-linecap="round"></path><path class="a" d="M98 70h24M114 62l8 8-8 8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path><rect class="s" x="134" y="14" width="76" height="112" stroke-width="2"></rect><path class="af" d="M162 52v36l28-18z"></path></svg></div>
+          <h3 class="t-xs">From GDD to playable</h3>
+          <p class="muted">Turn a game design document into a playable prototype in one click.</p>
+        </article>
+        <article class="pillar">
+          <span class="fig t-label">FIG 0.2</span>
+          <div class="art"><svg viewBox="0 0 220 140" fill="none" aria-hidden="true"><rect class="s" x="20" y="10" width="180" height="84" stroke-width="2"></rect><path class="s" d="M20 38h180M20 66h180M80 10v84M140 10v84" stroke-width="2"></path><rect class="af" x="141" y="39" width="58" height="26"></rect><rect class="s" x="20" y="108" width="180" height="24" stroke-width="2"></rect><path class="s" d="M32 120h92" stroke-width="2" stroke-linecap="round"></path><path class="a" d="M180 114l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          <h3 class="t-xs">An agent in your workspace</h3>
+          <p class="muted">Edit tables, generate art assets, draft design docs and convert files, all from one prompt.</p>
+        </article>
+        <article class="pillar">
+          <span class="fig t-label">FIG 0.3</span>
+          <div class="art"><svg viewBox="0 0 220 140" fill="none" aria-hidden="true"><rect class="s" x="10" y="48" width="44" height="44" stroke-width="2"></rect><path class="s" d="M54 70h34" stroke-width="2"></path><rect class="af" x="88" y="40" width="60" height="60"></rect><path class="s" d="M148 70h28" stroke-width="2"></path><rect class="s" x="176" y="22" width="34" height="34" stroke-width="2"></rect><rect class="s" x="176" y="84" width="34" height="34" stroke-width="2"></rect><path class="s" d="M162 70V39h14M162 70v31h14" stroke-width="2"></path></svg></div>
+          <h3 class="t-xs">Connected to any LLM</h3>
+          <p class="muted">Through MCP, language models read your design docs and write straight into your engine. No code.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap features">
+
+      <div id="gdd" class="grid feature">
+        <div class="feature-text">
+          <span class="eyebrow">01 · GDD to Game</span>
+          <h2 class="t-lg">From Design Doc to Playable Game</h2>
+          <p>Write your mechanics once. Keco reads your game design document, structures the rules, numbers and content inside it, and builds a playable version you can test right away.</p>
+          <a href="game-designers.html" class="arrow-link">Learn more<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 9h10.2L9.6 5.4 11 4l6 6-6 6-1.4-1.4 3.6-3.6H3z"></path></svg></a>
         </div>
-        
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="inline-block px-4 py-1 mb-6 rounded-full bg-cyan-50 border border-cyan-200 text-cyan-700 text-sm font-display tracking-widest uppercase shadow-sm">
-                The Future of Game Design
+        <div class="feature-mock mock mock-gdd" aria-label="Example: a design document becomes a playable build" role="img">
+          <div class="card">
+            <div class="card-head"><span>combat-design.md</span><span>GDD</span></div>
+            <div class="doc-body">
+              <span class="h">Combat rules</span>
+              <span>Base damage = ATK × 1.2 − target DEF</span>
+              <span>Crit chance 8%, crit damage 1.5×</span>
+              <span>Enemy HP +6% per dungeon floor</span>
+              <span>One loot roll per room, rare drop 5%</span>
+              <span class="h gap">Enemies</span>
+              <span>Slime · Skeleton · Warden (boss, floor 5)</span>
             </div>
-            <h1 class="font-display text-6xl md:text-8xl font-bold text-slate-900 mb-6 drop-shadow-sm">
-                KECO STUDIO
-            </h1>
-            <p class="mt-4 max-w-2xl mx-auto text-xl md:text-2xl text-slate-600 font-light">
-                Create smarter, Build faster, Play sooner.
-            </p>
-            <div class="mt-10 flex justify-center gap-4">
-                <a href="#features" class="px-8 py-4 bg-cyan-600 hover:bg-cyan-700 text-white rounded-lg font-bold text-lg transition-all shadow-lg hover:shadow-cyan-200/50">
-                    Explore Features
-                </a>
-                <a href="#contact" class="px-8 py-4 bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 rounded-lg font-bold text-lg transition-all shadow-sm">
-                    Contact Us
-                </a>
+          </div>
+          <div class="go"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 9h10.2L9.6 5.4 11 4l6 6-6 6-1.4-1.4 3.6-3.6H3z"></path></svg></div>
+          <div class="build">
+            <div class="card-head"><span>Playable build · Floor 3</span><b>Live</b></div>
+            <div class="build-body">
+              <div class="pixmap" data-map="build" style="--cell:30px"></div>
+              <div class="hp"><div><span>HP</span><span class="num">84 / 120</span></div><div class="bar"><i></i></div></div>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Mission Section -->
-    <section id="mission" class="py-24 bg-white relative">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <i class="fa-solid fa-quote-left text-4xl text-cyan-100 mb-6"></i>
-            <h2 class="font-display text-3xl md:text-4xl font-medium leading-relaxed text-slate-800">
-                "We exist to transform the way games are created by giving designers a single space to think, build, and collaborate—<span class="text-cyan-600 bg-cyan-50 px-2 rounded">seamlessly bridging imagination with game engines</span>."
-            </h2>
+      <div id="agent" class="grid feature flip">
+        <div class="feature-mock mock mock-agent" aria-label="Example: the agent rebalances a weapons table" role="img">
+          <div class="card">
+            <div class="card-head"><span>weapons · 24 rows</span><span>Snapshot v19</span></div>
+            <div class="table-scroll">
+              <table class="data">
+                <thead><tr><th>Item</th><th>Tier</th><th>ATK</th><th>Speed</th><th>DPS</th></tr></thead>
+                <tbody>
+                  <tr><td>Iron Sword</td><td>1</td><td>18</td><td>3.0</td><td>54</td></tr>
+                  <tr><td>Oak Staff</td><td>2</td><td>30</td><td>2.8</td><td>84</td></tr>
+                  <tr><td>Ember Blade</td><td>3</td><td><span class="was">46</span><span class="now">41</span></td><td>3.2</td><td><span class="was">147</span><span class="now">131</span></td></tr>
+                  <tr><td>Frost Pike</td><td>3</td><td>52</td><td>2.6</td><td>135</td></tr>
+                  <tr><td>Storm Bow</td><td>3</td><td><span class="was">38</span><span class="now">33</span></td><td>4.1</td><td><span class="was">156</span><span class="now">135</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card chat">
+            <div class="chat-row"><span class="who">You</span><span>Rebalance tier-3 weapons so DPS stays under 140.</span></div>
+            <div class="chat-row"><span class="who agent">Keco agent</span><span>Updated 2 rows in weapons. Snapshot v19 saved.</span><span class="chip-btns"><span class="chip solid">Review</span><span class="chip">Undo</span></span></div>
+          </div>
         </div>
-    </section>
-
-    <!-- Problem & Context -->
-    <section class="py-24 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="font-display text-4xl font-bold text-slate-900 mb-4">The Context</h2>
-                <p class="text-slate-500 max-w-2xl mx-auto">The current landscape of indie game development is full of both challenges and opportunities.</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8 mb-20">
-                <!-- Context Cards -->
-                <div class="bg-white border border-slate-200 p-8 rounded-2xl hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-100 transition-all group">
-                    <div class="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-cyan-50">
-                        <i class="fa-solid fa-users text-2xl text-cyan-600"></i>
-                    </div>
-                    <h3 class="font-display text-2xl font-bold text-slate-900 mb-3">Indie Developer Status</h3>
-                    <p class="text-slate-600">According to GDC 2025 survey, more than half of indie developers work in studios of 20 people or fewer. Small teams are the cornerstone of the industry.</p>
-                </div>
-                <div class="bg-white border border-slate-200 p-8 rounded-2xl hover:border-indigo-400 hover:shadow-xl hover:shadow-indigo-100 transition-all group">
-                    <div class="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-indigo-50">
-                        <i class="fa-solid fa-building-flag text-2xl text-indigo-600"></i>
-                    </div>
-                    <h3 class="font-display text-2xl font-bold text-slate-900 mb-3">Resource Gap</h3>
-                    <p class="text-slate-600">Small studios have limited resources to upgrade workflows. AAA tools are often expensive or too complex, leading to inefficiency.</p>
-                </div>
-            </div>
-
-            <!-- Pain Points (Modified Layout: Removed Image, Centered Text) -->
-            <div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-lg max-w-5xl mx-auto">
-                <div class="p-12">
-                    <div class="text-center mb-10">
-                         <h3 class="font-display text-3xl font-bold text-slate-900">Major Pain Points</h3>
-                         <p class="text-slate-500 mt-2">What slows down development today?</p>
-                    </div>
-                   
-                    <ul class="space-y-6 max-w-3xl mx-auto">
-                        <li class="flex items-start bg-slate-50 p-4 rounded-xl">
-                            <i class="fa-solid fa-xmark text-red-500 mt-1 mr-4 bg-red-100 p-1.5 rounded-full text-sm w-7 h-7 flex items-center justify-center"></i>
-                            <div>
-                                <strong class="text-slate-900 block text-lg">Frequent Tool Switching</strong>
-                                <span class="text-slate-600">The frustration of switching between five different tools just to make one update.</span>
-                            </div>
-                        </li>
-                        <li class="flex items-start bg-slate-50 p-4 rounded-xl">
-                            <i class="fa-solid fa-xmark text-red-500 mt-1 mr-4 bg-red-100 p-1.5 rounded-full text-sm w-7 h-7 flex items-center justify-center"></i>
-                            <div>
-                                <strong class="text-slate-900 block text-lg">Redundant Documentation</strong>
-                                <span class="text-slate-600">GDDs are lengthy, boring, and difficult to keep in sync with actual development.</span>
-                            </div>
-                        </li>
-                        <li class="flex items-start bg-slate-50 p-4 rounded-xl">
-                            <i class="fa-solid fa-xmark text-red-500 mt-1 mr-4 bg-red-100 p-1.5 rounded-full text-sm w-7 h-7 flex items-center justify-center"></i>
-                            <div>
-                                <strong class="text-slate-900 block text-lg">Lack of AI Assistance</strong>
-                                <span class="text-slate-600">No dedicated AI programming tools specifically designed for game design workflows.</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <div class="feature-text">
+          <span class="eyebrow">02 · Keco Agent</span>
+          <h2 class="t-lg">An Agent That Knows Your Game</h2>
+          <p>Ask the built-in agent to rebalance a table, generate sprites and item art, draft a design doc, or turn a messy spreadsheet into clean, linked data. It works on your real project, not a blank chat.</p>
+          <a href="#" class="arrow-link">Learn more<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 9h10.2L9.6 5.4 11 4l6 6-6 6-1.4-1.4 3.6-3.6H3z"></path></svg></a>
         </div>
-    </section>
+      </div>
 
-    <!-- Solution / Workflow -->
-    <section class="py-24 bg-white relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center mb-16">
-                <h2 class="font-display text-4xl font-bold text-slate-900 mb-4">The Solution <span class="text-slate-300">|</span> KECO STUDIO</h2>
-                <p class="text-xl text-slate-500">An all-in-one platform to replace scattered tools, built specifically for game designers.</p>
-            </div>
-
-            <div class="grid md:grid-cols-11 gap-4 items-center max-w-5xl mx-auto">
-                <!-- Old Flow -->
-                <div class="md:col-span-5 bg-slate-50 border border-red-100 p-8 rounded-xl">
-                    <h3 class="font-display text-xl text-red-500 mb-6 uppercase tracking-wider font-bold">Old Flow</h3>
-                    <div class="space-y-3 font-mono text-sm text-slate-500">
-                        <div class="p-3 bg-white rounded border border-slate-200 shadow-sm">GDD (Docs)</div>
-                        <div class="p-3 bg-white rounded border border-slate-200 shadow-sm">AutoCAD (Drafting)</div>
-                        <div class="p-3 bg-white rounded border border-slate-200 shadow-sm">Excel (Numbers)</div>
-                        <div class="p-3 bg-white rounded border border-slate-200 shadow-sm">Whiteboard</div>
-                        <div class="p-3 bg-white rounded border border-slate-200 shadow-sm">Game Engine</div>
-                    </div>
-                </div>
-
-                <!-- Arrow -->
-                <div class="md:col-span-1 flex justify-center py-4 md:py-0">
-                    <i class="fa-solid fa-arrow-right md:fa-arrow-right text-3xl text-slate-300"></i>
-                </div>
-
-                <!-- New Flow -->
-                <div class="md:col-span-5 bg-cyan-50 border border-cyan-200 p-8 rounded-xl shadow-lg shadow-cyan-100/50">
-                    <h3 class="font-display text-xl text-cyan-700 mb-6 uppercase tracking-wider font-bold">New Flow</h3>
-                    <div class="space-y-3 font-mono text-sm">
-                        <div class="p-4 bg-white rounded border border-slate-200 text-slate-800 font-bold shadow-sm">Game Engine</div>
-                        <div class="flex justify-center text-cyan-600 text-xs py-1 font-bold"><i class="fa-solid fa-arrow-down-up mr-1"></i> Seamless Sync</div>
-                        <div class="p-4 bg-gradient-to-r from-cyan-600 to-indigo-600 rounded border border-cyan-600 text-white font-bold shadow-lg">
-                            <i class="fa-solid fa-layer-group mr-2"></i> Keco Studio
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div id="mcp" class="grid feature">
+        <div class="feature-text">
+          <span class="eyebrow">03 · MCP Integration</span>
+          <h2 class="t-lg">Zero-Code Engine Integration</h2>
+          <p>Connect your favorite language model to Keco over MCP. It can read your design docs, reason about your systems, and write changes directly into your game engine without a line of code.</p>
+          <a href="#" class="arrow-link">Learn more<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 9h10.2L9.6 5.4 11 4l6 6-6 6-1.4-1.4 3.6-3.6H3z"></path></svg></a>
         </div>
-    </section>
-
-    <!-- Features Grid (Modified Layouts: Removed Images) -->
-    <section id="features" class="py-24 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="font-display text-4xl font-bold text-slate-900 mb-16 border-l-4 border-cyan-600 pl-6">Core Features</h2>
-
-            <div class="space-y-16">
-                
-                <!-- Feature 1: Asset Management & Balancing -->
-                <div class="bg-white p-10 rounded-2xl border border-slate-200 shadow-sm max-w-4xl mx-auto hover:shadow-md transition-shadow">
-                    <div class="flex flex-col items-center text-center">
-                        <div class="w-16 h-16 bg-cyan-100 rounded-2xl flex items-center justify-center mb-6">
-                            <i class="fa-solid fa-cubes text-cyan-700 text-2xl"></i>
-                        </div>
-                        <h3 class="font-display text-3xl font-bold text-slate-900 mb-4">Asset Management</h3>
-                        <p class="text-slate-600 mb-8 text-lg max-w-2xl">
-                            A centralized repository for all game assets. Seamless integration with game engines via <strong>drag-and-drop</strong>. Built-in version control for art and audio resources ensures the team is always up to date.
-                        </p>
-                        
-                        <div class="w-full h-px bg-slate-100 my-4"></div>
-
-                        <div class="mt-8">
-                             <div class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6 mx-auto">
-                                <i class="fa-solid fa-scale-balanced text-emerald-700 text-2xl"></i>
-                            </div>
-                            <h3 class="font-display text-3xl font-bold text-slate-900 mb-4">Numerical Balancing</h3>
-                            <p class="text-slate-600 text-lg max-w-2xl mx-auto">
-                                Real-time spreadsheets for game balancing. Adjust character stats, weapon damage, and economy values directly in Keco Studio and <strong>sync in real-time</strong> to the game engine.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Feature 2: Task Management & GDD -->
-                <div class="bg-white p-10 rounded-2xl border border-slate-200 shadow-sm max-w-4xl mx-auto hover:shadow-md transition-shadow">
-                    <div class="flex flex-col items-center text-center">
-                        <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mb-6">
-                            <i class="fa-solid fa-list-check text-indigo-700 text-2xl"></i>
-                        </div>
-                        <h3 class="font-display text-3xl font-bold text-slate-900 mb-4">Task Management & GDD</h3>
-                        <p class="text-slate-600 mb-8 text-lg max-w-2xl">
-                            Lightweight project tracking designed for game studios. Create, organize, and maintain professional game design documents that bring your vision to life.
-                        </p>
-                        <div class="flex flex-wrap justify-center gap-4">
-                            <span class="px-4 py-2 bg-slate-50 rounded-full text-slate-700 font-medium border border-slate-200"><i class="fa-solid fa-check text-cyan-600 mr-2"></i> Structured Tables</span>
-                            <span class="px-4 py-2 bg-slate-50 rounded-full text-slate-700 font-medium border border-slate-200"><i class="fa-solid fa-check text-cyan-600 mr-2"></i> Kanban Views</span>
-                            <span class="px-4 py-2 bg-slate-50 rounded-full text-slate-700 font-medium border border-slate-200"><i class="fa-solid fa-check text-cyan-600 mr-2"></i> Real-time Docs</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Feature 3: Whiteboard & AI -->
-                <div class="bg-white p-10 rounded-2xl border border-slate-200 shadow-sm max-w-4xl mx-auto hover:shadow-md transition-shadow">
-                    <div class="flex flex-col items-center text-center">
-                        <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
-                            <i class="fa-solid fa-wand-magic-sparkles text-purple-700 text-2xl"></i>
-                        </div>
-                        <h3 class="font-display text-3xl font-bold text-slate-900 mb-4">Whiteboard & AI Creative Coding</h3>
-                        <p class="text-slate-600 text-lg max-w-2xl">
-                            A shared digital whiteboard for sketching mechanics. Accelerate your creative workflow with AI that understands game development—generate assets, prototype mechanics, and translate visions into code.
-                        </p>
-                    </div>
-                </div>
-
+        <div class="feature-mock mock mock-mcp" aria-label="Example: a language model writes to game engines through Keco" role="img">
+          <div class="flow">
+            <div class="node"><span class="bold">Any LLM</span><span class="muted">Your assistant of choice</span></div>
+            <div class="link"><i></i><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M0 0l10 6-10 6z"></path></svg></div>
+            <div class="node hot"><span class="bold">Keco Studio</span><span class="muted">MCP server</span></div>
+            <div class="link"><i></i><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M0 0l10 6-10 6z"></path></svg></div>
+            <div class="node"><span class="bold">Game engine</span><span class="muted">Godot · Unity</span></div>
+          </div>
+          <div class="card">
+            <div class="card-head"><span>MCP session</span></div>
+            <div class="log">
+              <div><b>read</b><span>design/combat-design.md</span></div>
+              <div><b>read</b><span>tables/weapons · 24 rows</span></div>
+              <div><b class="w">write</b><span>exports/weapons.json → Godot project</span></div>
+              <div><b class="w">write</b><span>exports/weapons.json → Unity project</span></div>
+              <div><b>done</b><span>2 engines updated, no code written</span></div>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Roadmap -->
-    <section id="roadmap" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="font-display text-4xl font-center text-center font-bold text-slate-900 mb-16">Roadmap</h2>
-            
-            <div class="relative">
-                <!-- Line -->
-                <div class="absolute top-1/2 left-0 w-full h-1 bg-slate-200 -translate-y-1/2 hidden md:block"></div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Q1 Jan -->
-                    <div class="relative z-10 bg-white p-6 rounded-lg border border-slate-200 text-center hover:border-cyan-500 shadow-sm transition-all hover:shadow-md">
-                        <div class="w-12 h-12 bg-slate-50 border-2 border-cyan-500 rounded-full flex items-center justify-center text-slate-900 font-bold mx-auto mb-4">Q1</div>
-                        <h3 class="font-display text-xl text-slate-900 mb-1">2026 Jan</h3>
-                        <p class="text-cyan-600 font-bold text-sm mb-2">Beta</p>
-                        <p class="text-slate-500 text-sm">Invite-only test with indie studios.</p>
-                    </div>
+  <section id="faq" class="section faq">
+    <div class="wrap grid">
+      <div class="faq-intro">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="t-md">Frequently Asked Questions</h2>
+        <p class="muted">Can’t find what you’re looking for?</p>
+        <a href="#" class="arrow-link">Get in touch with the team<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 9h10.2L9.6 5.4 11 4l6 6-6 6-1.4-1.4 3.6-3.6H3z"></path></svg></a>
+      </div>
+      <div class="faq-list">
+        <details open><summary class="t-xs">What is Keco Studio?<svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path class="h" d="M6 14h16" stroke-width="1.5" stroke-linecap="round"></path><path class="v" d="M14 6v16" stroke-width="1.5" stroke-linecap="round"></path></svg></summary><p>Keco Studio is an AI-native workspace for game designers. It brings your mechanics, numbers and content into one connected system, so you can design, test and balance your game before development starts.</p></details>
+        <details><summary class="t-xs">Who is Keco for?<svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path class="h" d="M6 14h16" stroke-width="1.5" stroke-linecap="round"></path><path class="v" d="M14 6v16" stroke-width="1.5" stroke-linecap="round"></path></svg></summary><p>Game designers, narrative teams and technical designers, from solo creators to full studios. You don’t need to write code to use it.</p></details>
+        <details><summary class="t-xs">Can Keco really turn a GDD into a playable game?<svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path class="h" d="M6 14h16" stroke-width="1.5" stroke-linecap="round"></path><path class="v" d="M14 6v16" stroke-width="1.5" stroke-linecap="round"></path></svg></summary><p>Yes. Import or write your game design document and Keco structures the rules, numbers and content inside it, then generates a playable prototype you can test and iterate on.</p></details>
+        <details><summary class="t-xs">What can the Keco agent do?<svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path class="h" d="M6 14h16" stroke-width="1.5" stroke-linecap="round"></path><path class="v" d="M14 6v16" stroke-width="1.5" stroke-linecap="round"></path></svg></summary><p>It works directly on your project: editing and rebalancing tables, generating art assets, drafting design docs, and converting spreadsheets or scripts into clean, linked data.</p></details>
+        <details><summary class="t-xs">What is MCP and why does it matter?<svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path class="h" d="M6 14h16" stroke-width="1.5" stroke-linecap="round"></path><path class="v" d="M14 6v16" stroke-width="1.5" stroke-linecap="round"></path></svg></summary><p>MCP (Model Context Protocol) lets language models connect to Keco. They can read your design docs and write changes straight into your game engine without any code.</p></details>
+        <details><summary class="t-xs">Which formats and engines are supported?<svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path class="h" d="M6 14h16" stroke-width="1.5" stroke-linecap="round"></path><path class="v" d="M14 6v16" stroke-width="1.5" stroke-linecap="round"></path></svg></summary><p>Keco imports CSV and XLSX, and exports JSON, CSV and custom schemas. Exporters for Godot and Unity are available, with more engines on the way.</p></details>
+        <details><summary class="t-xs">Is Keco free to use?<svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path class="h" d="M6 14h16" stroke-width="1.5" stroke-linecap="round"></path><path class="v" d="M14 6v16" stroke-width="1.5" stroke-linecap="round"></path></svg></summary><p>The Starter plan is free and includes the core tools. Pro and Studio add AI agent credits, collaboration and priority support. See <a href="pricing.html" style="text-decoration:underline">Pricing</a> for details.</p></details>
+      </div>
+    </div>
+  </section>
 
-                    <!-- Q1 Feb -->
-                    <div class="relative z-10 bg-white p-6 rounded-lg border border-slate-200 text-center hover:border-cyan-500 shadow-sm transition-all hover:shadow-md">
-                        <div class="w-12 h-12 bg-slate-50 border-2 border-cyan-500 rounded-full flex items-center justify-center text-slate-900 font-bold mx-auto mb-4">Q1</div>
-                        <h3 class="font-display text-xl text-slate-900 mb-1">2026 Feb</h3>
-                        <p class="text-cyan-600 font-bold text-sm mb-2">Early Access</p>
-                        <p class="text-slate-500 text-sm">Expand user base, polish UX.</p>
-                    </div>
-
-                    <!-- Q2 April -->
-                    <div class="relative z-10 bg-white p-6 rounded-lg border border-slate-200 text-center hover:border-cyan-500 shadow-sm transition-all hover:shadow-md">
-                        <div class="w-12 h-12 bg-slate-50 border-2 border-cyan-500 rounded-full flex items-center justify-center text-slate-900 font-bold mx-auto mb-4">Q2</div>
-                        <h3 class="font-display text-xl text-slate-900 mb-1">2026 April</h3>
-                        <p class="text-cyan-600 font-bold text-sm mb-2">Full Launch</p>
-                        <p class="text-slate-500 text-sm">Public release with full features.</p>
-                    </div>
-                </div>
-            </div>
+  <section class="section">
+    <div class="wrap">
+      <div class="grid closing">
+        <div class="closing-main">
+          <span class="eyebrow">Get Started Today</span>
+          <h2 class="t-lg">Turn your next game idea into something playable.</h2>
+          <p class="muted">Bring your creativity. Keco handles the systems, data and balance, so you can spend more time making the game you imagined.</p>
+          <div class="btn-row">
+            <a href="#" class="btn btn-primary">Download Keco Studio</a>
+            <a href="pricing.html" class="btn btn-line">See Pricing</a>
+          </div>
         </div>
-    </section>
+        <form class="updates" data-updates novalidate>
+          <h2 class="t-xs bold">Register for Updates</h2>
+          <p class="t-label muted">Release notes, new templates and community events, once a month.</p>
+          <label class="field" for="updates-email">E-Mail *
+            <input id="updates-email" type="email" required placeholder="name@studio.com" autocomplete="email">
+          </label>
+          <button type="submit" class="btn btn-dark">Register</button>
+          <label class="check" for="updates-consent"><input id="updates-consent" type="checkbox"><span>I agree to receive product news from Keco Studio. Unsubscribe any time.</span></label>
+          <p class="form-status" role="status" hidden></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
 
-    <!-- Footer -->
-    <footer id="contact" class="bg-slate-50 pt-24 pb-12 border-t border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="font-display text-5xl font-bold text-slate-900 mb-6">KECO STUDIO</h2>
-            <p class="text-2xl text-slate-500 mb-12">Join us in building the future of game development.</p>
-            
-            <a href="mailto:contact@kecostudio.com" class="inline-flex items-center gap-3 text-cyan-600 hover:text-cyan-800 text-xl font-medium transition-colors mb-16">
-                <i class="fa-regular fa-envelope"></i>
-                pan@caerulean.ai
-            </a>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="ft-top">
+      <div>
+        <a href="index.html" aria-label="Keco Studio home"><img src="assets/keco-logo.png" alt="Keco" width="95" height="35"></a>
+        <p class="ft-tag">The AI-native workspace for designing, testing and balancing game systems.</p>
+      </div>
+      <div class="ft-lang"><a href="#"><b>English</b></a><span aria-hidden="true">·</span><a href="#" lang="zh">中文</a></div>
+    </div>
+    <div class="ft-cols">
+      <div><h3>Product</h3><ul><li><a href="#">» Download</a></li><li><a href="index.html#gdd">» GDD to game</a></li><li><a href="index.html#agent">» Keco agent</a></li><li><a href="index.html#mcp">» MCP integration</a></li><li><a href="pricing.html">» Pricing</a></li><li><a href="#">» Release notes</a></li></ul></div>
+      <div><h3>Solutions</h3><ul><li><a href="game-designers.html">» Game Designers</a></li><li><a href="#">» Narrative Teams</a></li><li><a href="#">» Technical Designers</a></li><li><a href="#">» Creators</a></li></ul></div>
+      <div><h3>Resources</h3><ul><li><a href="#">» Tutorials</a></li><li><a href="#">» Use cases</a></li><li><a href="#">» Documentation</a></li><li><a href="#">» Templates</a></li><li><a href="#">» Plugins</a></li></ul></div>
+      <div><h3>Community</h3><ul><li><a href="#">» Made with Keco</a></li><li><a href="#">» Events</a></li><li><a href="#">» Keco Forums</a></li><li><a href="https://github.com/keco-studio">» GitHub</a></li><li><a href="#">» All channels</a></li></ul></div>
+      <div><h3>Company</h3><ul><li><a href="#">» Support</a></li><li><a href="#">» Contact us</a></li></ul></div>
+    </div>
+    <div class="ft-bottom">
+      <div><a href="https://discord.com/invite/KecoStudio">Discord</a><a href="https://www.youtube.com/@KecoStudio">YouTube</a><a href="https://x.com/KecoStudio">X</a><a href="https://www.instagram.com/kecostudio">Instagram</a><a href="https://www.tiktok.com/@kecostudio">TikTok</a><a href="https://www.reddit.com/r/KecoStudio">Reddit</a><a href="https://github.com/keco-studio">GitHub</a></div>
+      <div><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Cookies</a><span>© 2026 Keco Studio</span></div>
+    </div>
+  </div>
+</footer>
 
-            <div class="flex justify-center space-x-8 mb-12">
-                <a href="#" class="text-slate-400 hover:text-slate-900 transition-colors"><i class="fa-brands fa-twitter text-2xl"></i></a>
-                <a href="#" class="text-slate-400 hover:text-slate-900 transition-colors"><i class="fa-brands fa-github text-2xl"></i></a>
-                <a href="#" class="text-slate-400 hover:text-slate-900 transition-colors"><i class="fa-brands fa-discord text-2xl"></i></a>
-            </div>
+<script src="site.js?v=theme-time-3"></script>
 
-            <p class="text-slate-400 text-sm">© 2025 Keco Studio. All rights reserved.</p>
-        </div>
-    </footer>
-
-</body>
-</html>
+</body></html>
